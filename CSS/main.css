@@ -41,88 +41,10 @@
   padding: 0 15px;
 }
 
-header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding-top: 20px;
-  background-color: var(--whiteColor);
-}
-
-.headerMain {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.headerLeft, .headerRight {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  padding: 0 15px;
-}
-
-.navOpenBtn {
-  margin-left: 100px;
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-}
-
-.coursesText {
-  font-weight: 700;
-}
-
-.navOpenBtn img {
-  margin-right: 15px;
-}
-
-.logo img {
-  width: 181px;
-}
-
-.headerRight {
-  justify-content: space-between;
-}
-
-.instructions {
-  margin-left: 100px;
-}
-
-.instructions a {
-  text-decoration: none;
-  color: var(--grayText);
-  transition: 0.3s ease;
-}
-
-.rigtLink {
-  margin-right: 20px;
-  padding: 5px 0;
-}
-
-.instructions a:hover {
-  border-bottom: 3px solid var(--greenColor);
-}
-
-.signIn {
-  display: flex;
-  align-items: center;
-}
-
-.navOpenBtn, .signIn {
-  cursor: pointer;
-}
-
-.signIn img {
-  margin-right: 15px;
-}
-
 .landingPageMain {
   width: 100%;
   margin-top: 203px;
+  padding: 0 15px;
 }
 
 .landingPageImg img {
@@ -168,7 +90,7 @@ header {
 }
 
 .landingPageImg {
-  margin-left: 80px;
+  margin-left: 60px;
 }
 
 .watchVideo {
