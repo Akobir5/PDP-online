@@ -189,7 +189,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
- 
+  z-index: 50;
   transition: 0.4s ease;
 }
 
@@ -212,6 +212,7 @@ header {
   height: 400px;
   margin-top: 40px;
   position: relative;
+  z-index: -10px;
   background-color: var(--cardBgColor);
   padding: 30px 30px 65px 64px;
   /* border-right: 2px solid #fff; */
