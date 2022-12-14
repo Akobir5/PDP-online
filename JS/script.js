@@ -11,10 +11,4 @@ closeBtn.addEventListener('click', () => {
   videoBox.classList.add('hideBox');
 })
 
-watchVideo.addEventListener('click', () => {
-  if (window.getSelection) {
-      window.getSelection().removeAllRanges();
-    } else { 
-      document.selection.empty();
-    }
-})
+watchVideo.addEventListener('click', (e) => {e.stopPropagation()})

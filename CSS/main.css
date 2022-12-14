@@ -148,9 +148,9 @@ header {
 
 .line {
   position: absolute;
-  height: 750px;
+  height: 850px;
   width: 1.5px;
-  bottom: 250px;
+  bottom: 200px;
   background-color: var(--lineColor);
   z-index: -1;
 }
@@ -229,6 +229,9 @@ header {
   z-index: -10px;
   background-color: var(--cardBgColor);
   padding: 30px 30px 65px 64px;
-  /* border-right: 2px solid #fff; */
   overflow-y: hidden
+}
+
+.traditionalEdu {
+ border-right: 2px solid #fff;
 }
