@@ -202,3 +202,18 @@ header {
   align-self: flex-start;
   margin: 145px 0 0 15px;
 }
+
+.eduMain {
+  display: flex;
+}
+
+.cardEdu {
+  width: 50%;
+  height: 400px;
+  margin-top: 40px;
+  position: relative;
+  background-color: var(--cardBgColor);
+  padding: 30px 30px 65px 64px;
+  /* border-right: 2px solid #fff; */
+  overflow-y: hidden
+}
