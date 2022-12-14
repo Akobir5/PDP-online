@@ -21,6 +21,20 @@
   --font: SFProDisplay-Semibold;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: rgb(173, 173, 173);
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: #777;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(56, 56, 56);
+  border-radius: 5px;
+}
 .container {
   width: 1200px;
   margin: 0 auto;
