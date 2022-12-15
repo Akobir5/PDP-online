@@ -27,8 +27,10 @@ function closeVideo() {
 }
 
 window.addEventListener('scroll', () => {
-  if(scrollY == "20") {
+  if(scrollY > "5") {
     header.classList.add('headerScroll');
     console.log(scrollY);
+  } else {
+    header.classList.remove('headerScroll');
   }
 })

@@ -17,6 +17,7 @@
   --greenColor: #00b533;
   --lineColor: #e6e6e6;
   --whiteColor: #fff;
+  --blackColor: #000;
   --cardBgColor: #f8f8f8;
   --font: SFProDisplay-Semibold;
 }
@@ -171,6 +172,80 @@
   overflow-y: hidden
 }
 
+.cardEdu a {
+  text-decoration: none;
+  color: var(--whiteColor);
+}
+
+.cardEdu a .bodyCard {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.hoverCard {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 50px 0 65px 64px;
+  z-index: -8px;
+  background-color: var(--greenColor);
+  visibility: hidden;
+}
+
+.arrow {
+  align-self: flex-end;
+  background-color: var(--whiteColor);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1px;
+}
+
+.cardEdu:hover > a > .hoverCard {
+  visibility: visible;
+}
+
+.hoverCard p {
+  line-height: 25px;
+  font-size: 20px;
+}
+
+.hoverCard img {
+  width: 200px;
+  margin-bottom: -40px;
+}
+
+.roc {
+  width: 170px !important;
+  margin-bottom: -65px !important;
+}
+
 .traditionalEdu {
  border-right: 2px solid #fff;
+}
+
+.cardBottom h2 {
+  color: var(--blackColor);
+  font-size: 30px;
+  margin-top: 25px;
+}
+
+.cardBottom p {
+  color: var(--grayText);
+  font-size: 16px;
+  margin-top: 12px;
+
 }

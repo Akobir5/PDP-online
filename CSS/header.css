@@ -10,9 +10,8 @@ header {
 }
 
 .headerScroll {
-  padding-top: 0 !important;
-  background-color: red;
-  transition: 0.3s ease;
+  padding-top: 0;
+  box-shadow: 0 2px 9px rgb(0 0 0 / 4%);
 }
 
 .headerMain {
