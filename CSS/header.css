@@ -57,15 +57,15 @@ header {
   margin-left: 100px;
 }
 
-.instructions a {
+.rightLink {
   text-decoration: none;
   color: var(--grayText);
   transition: 0.3s ease;
 }
 
-.rigtLink {
+.rightLink {
   margin-right: 20px;
-  padding: 5px 0;
+  padding: 3px 0;
 }
 
 .instructions a:hover {
