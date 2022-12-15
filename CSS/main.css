@@ -6,6 +6,10 @@
   outline: none;
 }
 
+body {
+  cursor: none !important;
+}
+
 @font-face {
   font-family: SFProDisplay-Semibold;
   src: url(/Fonts/FontsFree-Net-SFProDisplay-Semibold.ttf);
@@ -41,6 +45,41 @@
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.cursor {
+  position: fixed;
+  left: -20px;
+  top: -20px;
+  width: 45px;
+  height: 45px;
+  background-color: #00b53358;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 200;
+  transition: 0.15s linear;
+}
+
+.cursorWhite {
+  background-color: rgba(255, 255, 255, 0.432);
+}
+
+.innerCursor {
+  position: fixed;
+  left: -20px;
+  top: -20px;
+  width:10px;
+  height:10px;
+  background-color: #00b533;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 200;
+}
+
+.innerCursorWhite {
+  background-color: #fff;
 }
 
 .landingPageMain {

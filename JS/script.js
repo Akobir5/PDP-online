@@ -5,7 +5,21 @@ let header = document.querySelector('.header');
 let iframeVideo = document.querySelector('.iframeVideo');
 let closeBox = document.querySelector('.closeBox');
 let cardEdu = document.querySelectorAll('.cardEdu');
-let arrowImg = document.querySelectorAll('.arrow img')
+let arrowImg = document.querySelectorAll('.arrow img');
+let cursor = document.querySelector('.cursor');
+let innerCursor = document.querySelector('.innerCursor');
+
+document.addEventListener('mousemove', (e) => {
+  let x = e.clientX;
+  let y = e.clientY;
+  cursor.style.cssText = "left: " + x + "px; top: " + y + "px;";
+  innerCursor.style.cssText = "left: " + x + "px; top: " + y + "px;";
+})
+
+document.addEventListener('mouseout', () => {
+  cursor.style.display = "none";
+  innerCursor.style.display = "none";
+})
 
 btnVideo.addEventListener('click', () => {
   videoBox.classList.remove('hideBox');
@@ -29,7 +43,7 @@ function closeVideo() {
 }
 
 window.addEventListener('scroll', () => {
-  if (scrollY > "5") {
+  if (scrollY > "10") {
     header.classList.add('headerScroll');
   } else {
     header.classList.remove('headerScroll');
@@ -39,12 +53,22 @@ window.addEventListener('scroll', () => {
 cardEdu.forEach((item, i) => {
   item.addEventListener('mouseenter', () => {
     arrowImg[i].setAttribute('src', '/ICONS/right-up-green.png');
-    console.log("Hover")
+    item.classList.add('whiteHover')
   });
   item.addEventListener('mouseleave', () => {
     arrowImg[i].setAttribute('src', '/ICONS/top-right.svg');
-    console.log("Hover")
+    item.classList.remove('whiteHover');
   });
+
+  if(item.classList.contains('whiteHover')) {
+    cursor.classList.add('cursorWhite');
+    innerCursor.classList.add('innerCursorWhite');
+  }
+
+  if(!item.classList.contains('whiteHover')) {
+    cursor.classList.remove('cursorWhite');
+    innerCursor.classList.remove('innerCursorWhite');
+  }
 })
 
-console.log(arrowImg)
+
