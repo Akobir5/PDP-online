@@ -36,6 +36,7 @@
   background: rgb(56, 56, 56);
   border-radius: 5px;
 }
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -105,7 +106,7 @@
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background: url(https://img.youtube.com/vi/IlVpkBf3McU/hqdefault.jpg) center/cover no-repeat ;
+  background: url(https://img.youtube.com/vi/IlVpkBf3McU/hqdefault.jpg) center/cover no-repeat;
   cursor: pointer;
 }
 
@@ -214,7 +215,7 @@
   z-index: 10px;
 }
 
-.cardEdu:hover > a > .hoverCard {
+.cardEdu:hover>a>.hoverCard {
   visibility: visible;
 }
 
@@ -234,7 +235,7 @@
 }
 
 .traditionalEdu {
- border-right: 2px solid #fff;
+  border-right: 2px solid #fff;
 }
 
 .cardBottom h2 {
