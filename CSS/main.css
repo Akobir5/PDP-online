@@ -6,7 +6,7 @@
   outline: none;
 }
 
-body {
+html {
   cursor: none !important;
 }
 
@@ -24,6 +24,12 @@ body {
   --blackColor: #000;
   --cardBgColor: #f8f8f8;
   --font: SFProDisplay-Semibold;
+}
+
+
+::selection {
+  color: var(--whiteColor);
+  background-color: var(--greenColor);
 }
 
 ::-webkit-scrollbar {
