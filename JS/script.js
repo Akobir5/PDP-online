@@ -53,22 +53,26 @@ window.addEventListener('scroll', () => {
 cardEdu.forEach((item, i) => {
   item.addEventListener('mouseenter', () => {
     arrowImg[i].setAttribute('src', '/ICONS/right-up-green.png');
-    item.classList.add('whiteHover')
+    item.classList.add('whiteHover');
+
+    if(item.classList.contains('whiteHover')) {
+      cursor.classList.add('cursorWhite');
+      innerCursor.classList.add('innerCursorWhite');
+    }  
   });
   item.addEventListener('mouseleave', () => {
     arrowImg[i].setAttribute('src', '/ICONS/top-right.svg');
     item.classList.remove('whiteHover');
+
+    if(!item.classList.contains('whiteHover')) {
+      cursor.classList.remove('cursorWhite');
+      innerCursor.classList.remove('innerCursorWhite');
+    }
   });
 
-  if(item.classList.contains('whiteHover')) {
-    cursor.classList.add('cursorWhite');
-    innerCursor.classList.add('innerCursorWhite');
-  }
+  //Bug (Error) Not Working
 
-  if(!item.classList.contains('whiteHover')) {
-    cursor.classList.remove('cursorWhite');
-    innerCursor.classList.remove('innerCursorWhite');
-  }
+
 })
 
 
