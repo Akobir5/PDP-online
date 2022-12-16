@@ -6,13 +6,13 @@
   outline: none;
 }
 
-html {
+body {
   cursor: none !important;
 }
 
 @font-face {
   font-family: SFProDisplay-Semibold;
-  src: url(/Fonts/FontsFree-Net-SFProDisplay-Semibold.ttf);
+  src: url(/Fonts/SFPRODISPLAYREGULAR.OTF);
 }
 
 :root {
@@ -90,7 +90,7 @@ html {
 
 .landingPageMain {
   width: 100%;
-  margin-top: 203px;
+  padding-top: 203px !important;
   padding: 0 15px;
 }
 
@@ -293,5 +293,44 @@ html {
   color: var(--grayText);
   font-size: 16px;
   margin-top: 12px;
+}
 
+.selectMain {
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.cardSelect {
+  width: 50%;
+  background-color: var(--cardBgColor);
+  padding: 70px 100px 30px 64px;
+}
+
+.cardSelect:nth-child(1) {
+  border-right: 1px solid #fff;
+}
+
+.typeCard {
+  display: flex;
+  justify-content: space-between;
+}
+
+.typeInfo h2 {
+  font-size: 30px;
+}
+
+.textFirst {
+  margin-top: 25px;
+}
+
+.textFirst div {
+  color: var(--grayText);
+  font-size: 20px;
+  height: 30px;
+}
+
+
+.hoverText {
+  display: none;
 }
