@@ -70,9 +70,6 @@ cardEdu.forEach((item, i) => {
     }
   });
 
-  //Bug (Error) Not Working
-
-
 })
 
 

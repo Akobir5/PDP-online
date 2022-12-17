@@ -303,8 +303,10 @@ body {
 
 .cardSelect {
   width: 50%;
+  height: 334px;
   background-color: var(--cardBgColor);
   padding: 70px 100px 30px 64px;
+  position: relative;
 }
 
 .cardSelect:nth-child(1) {
@@ -314,23 +316,83 @@ body {
 .typeCard {
   display: flex;
   justify-content: space-between;
+  height: 100%;
+}
+
+.typeInfo {
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
 }
 
 .typeInfo h2 {
   font-size: 30px;
 }
 
-.textFirst {
-  margin-top: 25px;
-}
-
-.textFirst div {
+.textFirst div, .hoverText  {
   color: var(--grayText);
   font-size: 20px;
   height: 30px;
 }
 
+.hoverText {
+  line-height: 30px;
+  margin-top: -50px;
+}
+
+.moreInfoBox {
+  display: flex;
+  align-items: flex-end;
+  
+}
+
+.moreInfo {
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  text-decoration: none;
+  color: var(--grayText);
+  font-size: 20px;
+}
+
+.moreInfo img {
+  transition: 0.3s ease;
+}
+
+.moreInfo:hover img {
+  transform: translateX(10px);
+}
 
 .hoverText {
   display: none;
 }
+
+.hoverImg1 {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: none;
+}
+
+.cardSelect:hover .typeLogo{
+  display: none;
+}
+
+
+.cardSelect:hover .textFirst{
+  display: none;
+}
+
+.cardSelect:hover .hoverText {
+  display: block;
+}
+
+.cardSelect:hover .hoverImg1 {
+  display: block;
+}
+
