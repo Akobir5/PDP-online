@@ -5,10 +5,10 @@
   font-family: var(--font);
   outline: none;
 }
-
+/* 
 body {
   cursor: none !important;
-}
+} */
 
 @font-face {
   font-family: SFProDisplay-Semibold;
