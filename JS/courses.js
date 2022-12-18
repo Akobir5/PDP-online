@@ -68,9 +68,6 @@ courses.map((element) => {
 </div>
   `
 getCards.push(card);
-
-// allCourses.appendChild(card)
 })
 
-console.log(getCards)
-
+allCourses.innerHTML = getCards.join(" ");
