@@ -5,10 +5,10 @@
   font-family: var(--font);
   outline: none;
 }
-/* 
+
 body {
   cursor: none !important;
-} */
+}
 
 @font-face {
   font-family: SFProDisplay-Semibold;
@@ -383,7 +383,6 @@ body {
   display: none;
 }
 
-
 .cardSelect:hover .textFirst{
   display: none;
 }
@@ -396,3 +395,80 @@ body {
   display: block;
 }
 
+.coursesMain {
+  margin-top: 50px;
+  background-color: var(--cardBgColor);
+}
+
+.textCourses {
+  padding: 72px 64px 30px;
+}
+
+.textCourses h1 {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.textCourses p {
+  color: var(--grayText);
+  line-height: 30px;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.allCourses {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fit, 49.87%);
+  grid-auto-rows: 240px;
+  grid-gap: 3px;
+  padding: 0 3px;
+}
+
+.courseCard {
+  background-color: var(--whiteColor);
+  padding: 47px 30px 40px 62px;
+}
+
+.innerCard {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.headerInner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.headerInner h2 {
+  font-size: 22px;
+}
+
+.headerInner .arrow {
+  background-color: var(--cardBgColor);
+  transition: 0.3s ease;
+}
+
+.courseCard:hover .arrow {
+  background-color: var(--greenColor);
+}
+
+.footerInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerInner p {
+  color: var(--grayText);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footerInner img {
+  width: 100px;
+}
