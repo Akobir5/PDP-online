@@ -11,6 +11,11 @@
   <link rel="stylesheet" href="/CSS/header.css">
   <link rel="stylesheet" href="/CSS/main.css">
   <link rel="stylesheet" href="/CSS/footer.css">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="/CSS/swiper.css">
+
 </head>
 
 <body>
@@ -70,13 +75,15 @@
               </div>
 
               <div class="hideBox videoBox">
-                <iframe class="iframeVideo" width="820" height="462" src="https://www.youtube.com/embed/IlVpkBf3McU"
+                <div class="infoVideoBox">
+                  <iframe class="iframeVideo" width="820" height="462" src="https://www.youtube.com/embed/IlVpkBf3McU"
                   title="Dasturlashni online o’rganing! | PDP IT-Academy" frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
                 <span class="closeBtn">
                   <img src="/ICONS/close.png" alt="404">
                 </span>
+                </div>
                 <div class="closeBox"></div>
               </div>
             </div>
@@ -175,9 +182,9 @@
                 <div class="typeInfo">
                   <h2>Online</h2>
                   <div class="textFirst">
-                    <div>  Ushbu ta’lim shaklida o’qish va ishdan</div>
-                    <div>  ajralmagan holda kunning istalgan vaqtida</div>
-                    <div>  masofaviy ta’lim olishingiz mumkun</div>
+                    <div> Ushbu ta’lim shaklida o’qish va ishdan</div>
+                    <div> ajralmagan holda kunning istalgan vaqtida</div>
+                    <div> masofaviy ta’lim olishingiz mumkun</div>
                   </div>
 
                   <div class="hoverText">
@@ -208,10 +215,88 @@
         <div class="coursesMain">
           <div class="textCourses">
             <h1>O'zingizga mos yo'nalish tanlang</h1>
-            <p>Dasturlash sohasida eng rivojlangan va talabi yuqori bo'lgan kurslardan birini tanlang. Kurs davomida portfolio to'plash, rezyume hosil qilish va ish topishingizga esa biz yordam beramiz.</p>
+            <p>Dasturlash sohasida eng rivojlangan va talabi yuqori bo'lgan kurslardan birini tanlang. Kurs davomida
+              portfolio to'plash, rezyume hosil qilish va ish topishingizga esa biz yordam beramiz.</p>
           </div>
 
           <div class="allCourses"></div>
+        </div>
+
+        <div class="discountMain">
+          <div class="discountInfo">
+            <div class="discountCard">
+              <h1>Imtiyozlar</h1>
+              <p>Agarda sizning hozirgi moliyaviy vaziyatingiz bizda o‘qish imkonini bermasa afsuslanmang siz uchun
+                maxsus imtiyozlarimiz mavjud</p>
+              <a class="moreInfoDiscount" href="#">
+                Batafsil
+                <img src="/ICONS/course-right.svg" alt="404">
+              </a>
+            </div>
+            <div class="imgDiscount">
+              <img src="/IMAGES/student.png" alt="404">
+            </div>
+          </div>
+        </div>
+
+        <div class="chancesMain">
+          <div class="chanceLeft"></div>
+          <div class="chanceRight">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div>
+                    <h2>Yagona tizim</h2>
+                    <p>Har bir talaba uchun personal kabineti mavjud bo’lib o’quv jarayoniga oid barcha ma’lumotlar bir
+                      joyda</p>
+                  </div>
+                  <div class="sliderImg">
+                    <img src="/IMAGES/Bitmap.png" alt="404">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <h2>Topshiriqlar</h2>
+                    <p>Barcha darslarda turli qiyinlik darajasidagi maxsus topshiriqlar mavjud.</p>
+                  </div>
+                  <div class="sliderImg">
+                    <img src="/IMAGES/Bitmap.png" alt="404">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <h2>Baholash tizimi</h2>
+                    <p>Har bir talaba uchun baxolash tizimi mavjud. Talabalar bajaradigan topshiriqlar baxolarga bevosita bog’liq.</p>
+                  </div>
+                  <div class="sliderImg">
+                    <img src="/IMAGES/Bitmap.png" alt="404">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <h2>Bildirishnomalar</h2>
+                    <p>Biz siz haqingizda qayg’uramiz.  Endi hech narsani unitib qoldirmaysiz. Biz eslatamiz.</p>
+                  </div>
+                  <div class="sliderImg">
+                    <img src="/IMAGES/Bitmap.png" alt="404">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <h2>O’z resumengizni yarating</h2>
+                    <p>Tizimda o’zingizning resumingizni yarating. Biz bilan juda oson.</p>
+                  </div>
+                  <div class="sliderImg">
+                    <img src="/IMAGES/Bitmap.png" alt="404">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -223,6 +308,11 @@
 
   <script src="/JS/script.js"></script>
   <script src="/JS/courses.js"></script>
+  <script src="/JS/swiper.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
 </body>
 
 </html>

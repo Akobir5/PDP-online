@@ -48,8 +48,8 @@ let getCards = [];
 console.log(courses);
 
 courses.map((element, idx) => {
-  const {name, count, img} = element
-  let card =  `
+  const { name, count, img } = element
+  let card = `
   <div class="courseCard">
   <div class="innerCard">
     <div class="headerInner">
@@ -74,7 +74,7 @@ courses.map((element, idx) => {
 </div>
   `
 
-getCards.push(card);
+  getCards.push(card);
 });
 
 allCourses.innerHTML = getCards.join(" ");
@@ -95,10 +95,10 @@ cardsOfCourses.forEach((item, index) => {
 let getImgs = document.querySelectorAll('.myLogo')
 let deleteImg = document.querySelectorAll('.deleteImg')
 
-for(let i = 0; i < getImgs.length; i++) {
+for (let i = 0; i < getImgs.length; i++) {
   let src = getImgs[i].getAttribute('src');
-  for(let j = i; j < deleteImg.length; j++) {
-    if(src[i] = 'undefind' && i == j) {
+  for (let j = i; j < deleteImg.length; j++) {
+    if (src[i] = 'undefind' && i == j) {
       deleteImg[j].style.display = 'none'
     }
   }

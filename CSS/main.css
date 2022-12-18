@@ -6,9 +6,14 @@
   outline: none;
 }
 
-body {
+/* body {
+  background-color: var(--whiteColor) !important;
+} */
+
+
+/* body {
   cursor: none !important;
-}
+} */
 
 @font-face {
   font-family: SFProDisplay-Semibold;
@@ -75,8 +80,8 @@ body {
   position: fixed;
   left: -20px;
   top: -20px;
-  width:10px;
-  height:10px;
+  width: 10px;
+  height: 10px;
   background-color: #00b533;
   border-radius: 50%;
   pointer-events: none;
@@ -191,16 +196,19 @@ body {
   border: 5px;
 }
 
+.infoVideoBox {
+  position: relative;
+}
+
 .closeBtn img {
   width: 30px;
 }
 
 .closeBtn {
-  align-self: flex-start;
-  margin: 145px 0 0 15px;
-  position: relative;
+  position: absolute;
   cursor: pointer;
   z-index: 100;
+  margin: 0 15px;
 }
 
 .eduMain {
@@ -333,7 +341,8 @@ body {
   font-size: 30px;
 }
 
-.textFirst div, .hoverText  {
+.textFirst div,
+.hoverText {
   color: var(--grayText);
   font-size: 20px;
   height: 30px;
@@ -347,7 +356,7 @@ body {
 .moreInfoBox {
   display: flex;
   align-items: flex-end;
-  
+
 }
 
 .moreInfo {
@@ -379,11 +388,11 @@ body {
   display: none;
 }
 
-.cardSelect:hover .typeLogo{
+.cardSelect:hover .typeLogo {
   display: none;
 }
 
-.cardSelect:hover .textFirst{
+.cardSelect:hover .textFirst {
   display: none;
 }
 
@@ -472,3 +481,61 @@ body {
 .footerInner img {
   width: 100px;
 }
+
+.discountMain {
+  padding: 60px 0 0;
+  background-color: var(--cardBgColor);
+  position: relative;
+  margin-top: 50px;
+  height: 550px;
+}
+
+.discountInfo {
+  height: 100%;
+  display: grid;
+  align-items: flex-end;
+  grid-template-columns: 5fr 7fr;
+}
+
+.discountCard {
+  padding: 132px 15px 0 80px;
+  height: 100%;
+}
+
+.discountCard p {
+  font-size: 20px;
+  color: var(--grayText);
+  margin: 16px 0;
+  line-height: 30px;
+}
+
+.moreInfoDiscount {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--grayText);
+  margin: 55px 0 100px;
+  font-size: 18px;
+}
+
+.moreInfoDiscount img {
+  margin-left: 10px;
+  transition: 0.3s ease;
+}
+
+.moreInfoDiscount:hover img {
+  margin-left: 15px;
+}
+
+.imgDiscount {
+  position: relative;
+  padding: 0 15px;
+}
+
+.imgDiscount img {
+  width: 80%;
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+}
+
