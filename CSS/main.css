@@ -11,9 +11,9 @@
 } */
 
 
-/* body {
+body {
   cursor: none !important;
-} */
+}
 
 @font-face {
   font-family: SFProDisplay-Semibold;
@@ -455,6 +455,7 @@
 .courseCard {
   background-color: var(--whiteColor);
   padding: 47px 30px 40px 62px;
+  cursor: pointer;
 }
 
 .innerCard {
@@ -558,6 +559,30 @@
 }
 
 .chancesMain {
+  background-color: var(--cardBgColor);
+  height: 500px;
+  margin-top: 50px;
   display: grid;
-  grid-template-columns: 6fr 6fr;
+  grid-template-columns: repeat(auto-fit, 50%);
+  position: relative;
 }
+
+.chanceLeft {
+  margin: 190px 64px 64px;
+}
+
+.chanceLeft h1 {
+  font-size: 30px;
+  margin: 24px 0 8px;
+}
+
+.chanceLeft p {
+  font-size: 20px;
+  color: var(--grayText);
+  line-height: 30px;
+}
+
+.chanceRight {
+  background-color: var(--greenColor);
+}
+
