@@ -7,13 +7,8 @@
 }
 
 /* body {
-  background-color: var(--whiteColor) !important;
-} */
-
-
-body {
   cursor: none !important;
-}
+} */
 
 @font-face {
   font-family: SFProDisplay-Semibold;
@@ -498,7 +493,16 @@ body {
 }
 
 .footerInner img {
-  width: 100px;
+  width: 80px;
+}
+
+.imgCardBox {
+  display: flex;
+  align-items: center;
+}
+
+.footerInner img:nth-child(1) {
+  margin-right: 10px;
 }
 
 .discountMain {
@@ -550,6 +554,7 @@ body {
   position: relative;
   padding: 0 15px;
 }
+
 
 .imgDiscount img {
   width: 80%;

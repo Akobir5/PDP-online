@@ -67,7 +67,7 @@ courses.map((element, idx) => {
 
       <div class="imgCardBox">
       <img class="myLogo" src="${img[0]}" alt="404">
-      <img class="myLogo deleteImg" src="${img[1]}" alt="404">
+      ${img.length!==1 ? `<img class="myLogo" src=${img[1]} alt="404">`: ''}
       </div>
     </div>
   </div>
@@ -95,13 +95,14 @@ cardsOfCourses.forEach((item, index) => {
 let getImgs = document.querySelectorAll('.myLogo')
 let deleteImg = document.querySelectorAll('.deleteImg')
 
-for (let i = 0; i < getImgs.length; i++) {
-  let src = getImgs[i].getAttribute('src');
-  for (let j = i; j < deleteImg.length; j++) {
-    if (src[i] = 'undefind' && i == j) {
-      deleteImg[j].style.display = 'none'
-    }
-  }
+// for (let i = 0; i < getImgs.length; i++) {
+//   let src = getImgs[i].getAttribute('src');
+//   console.log(')))))))))))))))))))   ', typeofsrc);
+//   for (let j = i; j < deleteImg.length; j++) {
+//     if (src[i] = 'undefind' && i == j) {
+//       deleteImg[j].style.display = 'none'
+//     }
+//   }
 
-  console.log(src);
-}
+  // console.log(src);
+// }
